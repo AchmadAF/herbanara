@@ -41,6 +41,7 @@
       <section class="section final-cta" data-od-id="final-cta"><div class="cta-card"><p class="eyebrow">Mulai dari hari ini</p><h2>Mulai Rutinitas Sehatmu Bersama Herbanara</h2><p class="lead">Pilih varian favoritmu dan nikmati seduhan herbal alami setiap hari.</p><div class="btn-row"><button class="btn btn-primary js-marketplace" type="button">Beli Sekarang</button><a class="btn btn-secondary" href="#produk">Bandingkan Varian</a></div><p class="note">Catatan: Produk herbal membantu menjaga kesehatan tubuh dan bukan pengganti pengobatan medis. Konsultasikan dengan tenaga kesehatan bila memiliki kondisi khusus.</p></div></section>
     </main>
   </div>
+  <div class="toast" id="toast" role="status" aria-live="polite">CTA marketplace siap diganti dengan link toko resmi.</div>
   <script>
     const filterButtons=document.querySelectorAll('.filter-btn');const productCards=document.querySelectorAll('.product-card');const toast=document.getElementById('toast');let toastTimer;
     filterButtons.forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.filter;filterButtons.forEach(btn=>btn.classList.remove('active'));button.classList.add('active');productCards.forEach(card=>{const visible=filter==='all'||card.dataset.tags.includes(filter);card.style.display=visible?'grid':'none';});}));
